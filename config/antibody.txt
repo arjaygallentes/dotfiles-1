@@ -1,7 +1,10 @@
 # Sorted in order of appearance (new at the bottom):
 sobolevn/wakatime-zsh-plugin
 zsh-users/zsh-syntax-highlighting
-
+zdharma/fast-syntax-highlighting
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-completions
 
 # Theme, should be the last:
-sobolevn/sobole-zsh-theme
+bhilburn/powerlevel9k
