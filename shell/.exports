@@ -3,7 +3,7 @@
 # `.exports` is used to provide custom variables.
 #
 # This file is used as a part of `.shell_env`
-
+export TERM="xterm-256color"
 
 # === Compiler flags ===
 
