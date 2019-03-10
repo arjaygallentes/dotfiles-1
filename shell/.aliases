@@ -11,7 +11,7 @@
 alias la="exa -abghl --git"
 
 # git with hub:
-alias git="hub"
+#alias git="hub"
 
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
@@ -34,8 +34,8 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
-# Colorls 
-alias ls="colorls -r --dark --sd"
-alias lc="colorls --tree --dark"
-alias lo="colorls --group-directories-first --almost-all --long --dark"
-alias c="clear"
+# Colorls
+#alias ls="colorls -r --dark --sd"
+#alias lc="colorls --tree --dark"
+#alias lo="colorls --group-directories-first --almost-all --long --dark"
+#alias c="clear"
