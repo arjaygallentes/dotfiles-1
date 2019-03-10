@@ -67,7 +67,7 @@ export PIPENV_NOSPIN=true # disables spinner for cleaner logs
 
 # nvm:
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+source "$HOME/.linuxbrew/opt/nvm/nvm.sh"
 
 # pyenv:
 eval "$(pyenv init -)"
