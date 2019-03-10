@@ -31,6 +31,8 @@ PATH="$HOME/.local/bin:$PATH"
 # Adds `poetry` binary, should be added to the end:
 PATH="$PATH:$HOME/.poetry/bin"
 
+PATH="$HOME/.linuxbrew/Cellar/pyenv/1.2.9/bin:$PATH"
+
 export PATH
 
 
