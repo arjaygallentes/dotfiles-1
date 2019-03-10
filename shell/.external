@@ -12,15 +12,15 @@ source <(npm completion)  # adds normal autocomplete to `npm` commands
 # === fzf ===
 # https://github.com/junegunn/fzf
 
-if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="$PATH:/usr/local/opt/fzf/bin"
+if [[ ! "$PATH" == *$HOME/.linuxbrew/opt/fzf/bin* ]]; then
+  export PATH="$PATH:$HOME/.linuxbrew/opt/fzf/bin"
 fi
 
 # Auto-completion
-[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "$HOME/.linuxbrew/opt/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
-source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+source "$HOME/.linuxbrew/opt/fzf/shell/key-bindings.zsh"
 
 # Setting ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
@@ -36,8 +36,8 @@ _fzf_compgen_path() {
 # === z ===
 # https://github.com/rupa/z
 
-source "/usr/local/etc/profile.d/z.sh"
-
+#source "/usr/local/etc/profile.d/z.sh"
+source "$HOME/.linuxbrew/etc/profile.d/z.sh"
 
 # === nnn ===
 # https://github.com/jarun/nnn
