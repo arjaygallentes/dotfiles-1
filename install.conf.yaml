@@ -27,6 +27,11 @@
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
 
+- link:
+    ~/.fonts:
+    path: fonts
+    create: true
+
 - brewfile:
     file: Brewfile
     no-upgrage: true
