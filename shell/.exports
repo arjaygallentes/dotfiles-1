@@ -33,6 +33,8 @@ PATH="$PATH:$HOME/.poetry/bin"
 
 PATH="$HOME/.linuxbrew/Cellar/pyenv/1.2.9/bin:$PATH"
 
+PATH="/usr/games:$PATH"
+
 export PATH
 
 
