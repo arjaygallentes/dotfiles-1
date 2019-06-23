@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+source $HOME/antigen.zsh
+antigen init $HOME/.antigenrc
+
 POWERLEVEL9K_MODE="nerdfont-complete"
 
 # Theme is set via `antibody`, see `config/antibody.txt`.
@@ -14,7 +17,7 @@ CASE_SENSITIVE="false"
 HYPHEN_INSENSITIVE="false"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="false"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -31,12 +34,17 @@ HIST_IGNORE_SPACE="true"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
+  git
   gitfast
   python
   django
   osx
   brew
   extract
+#  hacker-quotes
+#  fasd
+  kubectl
+  gitignore
 )
 
 # User configuration
@@ -45,6 +53,10 @@ export PATH="/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php56/bin:/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Custom envs:
+#if type brew &>/dev/null; then
+#  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+#fi
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.shell_env
 
@@ -56,3 +68,26 @@ source $HOME/.shell_env
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# The following lines were added by compinstall
+
+#zstyle ':completion:*' completer _complete _ignored _correct _approximate
+#zstyle ':completion:*' max-errors 3
+#zstyle ':completion:*' prompt '1'
+#zstyle :compinstall filename '$HOME/.zshrc'
+
+#autoload -Uz compinit
+#compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+#bindkey -e
+# End of lines configured by zsh-newuser-install
+#if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+#if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+#if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+
+#source $HOME/antigen.zsh 

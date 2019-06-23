@@ -35,7 +35,14 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 # Colorls
-#alias ls="colorls -r --dark --sd"
-#alias lc="colorls --tree --dark"
-#alias lo="colorls --group-directories-first --almost-all --long --dark"
-#alias c="clear"
+alias ls="colorls -r --dark --sd"
+alias lc="colorls --tree --dark"
+alias lo="colorls --group-directories-first --almost-all --long --dark"
+alias c="clear"
+alias whichterm="perl -lpe 's/\0/ /g' /proc/$(xdotool getwindowpid $(xdotool getactivewindow))/cmdline"
+
+alias dot="dotnet"
+alias dotb="dotnet build"
+alias dotn="$HOME/dotnet/dotnet"
+alias dotnb="$HOME/dotnet/dotnet build"
+alias gmoji="gitmoji-commit-hook --init"

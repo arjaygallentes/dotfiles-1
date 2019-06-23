@@ -1,5 +1,6 @@
 [core]
   excludesfile = ~/.gitignore_global
+	autocrlf = input
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
   show = diff-so-fancy | less --tabs=1,5 -RFX
@@ -11,8 +12,8 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[commit]
-  gpgsign = true
+# [commit]
+#  gpgsign = true
 [push]
   default = simple
 [user]
@@ -22,7 +23,7 @@
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
-	enabled = 1
+	enabled = true
 
 # Colors
 [color]
@@ -43,3 +44,5 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
   path = ~/.gitconfig_local
+[gpg]
+	program = gpg2

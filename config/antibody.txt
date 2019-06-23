@@ -5,6 +5,7 @@ zdharma/fast-syntax-highlighting
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-completions
+#MikeDacre/careful_rm
 
 # Theme, should be the last:
 bhilburn/powerlevel9k
